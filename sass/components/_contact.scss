@@ -1,0 +1,35 @@
+// .contact {
+//     display: flex;
+//     align-items: center;
+//     margin-left: auto;
+
+  
+//     &>&__item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+//     &__icon {
+//          margin-right: 10px;
+//   }
+    
+//   } 
+//   .contact__link {
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+//     display: flex;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     align-items: center;
+  
+//     font-weight: 500;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: inherit;
+//     fill: $main-text-color;
+  
+//     &:hover,
+//     &:focus {
+//     color: $style-color;
+//     fill: $style-color;
+//    }
+//   }

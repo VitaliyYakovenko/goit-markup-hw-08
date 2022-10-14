@@ -1,0 +1,23 @@
+@import "./utils/vars";
+@import "./utils/modern-normalize";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+@import "./utils/utilities";
+
+
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/contact";
+
+@import "./components/hero-section";
+@import "./components/benefits";
+@import "./components/works";
+@import "./components/teams";
+@import "./components/networks";
+@import "./components/сlient";
+@import "./components/card-company";
+@import "./components/page-footer";
+@import "./components/modal";
+
+@import "./components/button-set";
+@import "./components/card-set";
