@@ -1,19 +1,13 @@
-// .page-header {
-//     background-color: inherit;
+.page-header {
+    background-color: inherit;
  
   
-//     &--border {
-//     border-bottom: 1px solid #ECECEC;
-//   }
+    &--border {
+    border-bottom: 1px solid #ECECEC;
+  }
   
-//     &--flex {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-.header-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
+    &--flex {
+    display: flex;
+    align-items: center;
+  }
 }
