@@ -30,9 +30,9 @@
 //   }
 // }
   
-//   .page-footer__networks-set {
-//     margin-bottom: 0px;
-//   }
+  // .page-footer__networks-set {
+  //   margin-bottom: 0px;
+  // }
 
 //   .network-link--blue-bg {
 //     fill: $address-map-color;
@@ -48,7 +48,14 @@
 
 .networks-set {
     display: flex;
-    margin-bottom: 30px;
+    
+    @media screen and (max-width: 767px) {
+      padding-bottom: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    }
+    padding-bottom: 30px;
     justify-content: center;
 
     &__item:not(:last-child) {
@@ -79,7 +86,7 @@
 }
   
   .page-footer__networks-set {
-    margin-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .network-link--blue-bg {

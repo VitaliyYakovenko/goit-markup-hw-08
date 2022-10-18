@@ -10,55 +10,60 @@
 <body>
     <header class="page-header page-header--border">
         <div class="container page-header--flex">
-        <a class="logo link" href="./index.html" 
-        lang="en">Web<span class="logo--black">Studio</span></a>
-        <button type="button"
-        class="header-btn">
-            <svg  width="24" height="24">
-                <use class="header-btn__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            <a class="logo link" href="./index.html" 
+            lang="en">Web<span class="logo--black">Studio</span></a>
+        <button 
+        type="button"
+        class="menu-button">
+            <svg class="menu-button__icon"
+            aria-label="Переключатель мобильного меню"
+            aria-expanded="false"
+            width="24" 
+            height="16">
+                <use class="js-open-menu" href="./images/symbol-defs.svg#icon-menu"></use>
             </svg>
         </button>
-        <div class="mobile-menu">
-            <button  type="button"
-            class="button-mobile">
-                <svg class="button-mobile__icon" width="19" height="19">
-                    <use href="./images/symbol-defs.svg#icon-close"></use>
-                </svg>
+        <div class="mob-menu">
+            <button class="menu-button-close"
+             type="button">
+             <svg class="menu-button-close__icon"  width="24"  height="24">
+                <use class="js-close-menu" href="./images/symbol-defs.svg#icon-close"></use>
+             </svg>
             </button>
-            <ul class="mobile-menu__list list">
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link link" class="link" href="./index.html">Студія</a>
+            <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link link" class="link" href="./index.html">Студія</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link link" class="link" href="./portfolio.html">Портфоліо</a>
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link link" class="link" href="./portfolio.html">Портфоліо</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link link" class="link" href="">Контакти</a>
-                </li>
-            </ul>
-            <ul class="mobile-menu__contact-list list">
-                <li class="mobile-menu__contact-item">
-                <a  class="mobile-menu__contact-number link" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="mobile-menu__contact-item">
-                <a class="mobile-menu__contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link link" class="link" href="">Контакти</a>
                 </li>
             </ul>
-            <ul class="mobile-menu__social-list list"> 
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link  link" 
+            <ul class="mob__contact-list list">
+                <li class="mob-menu__contact-item">
+                <a  class="mob-menu__contact-number link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu__contact-item">
+                <a class="mob-menu__contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mob-menu__social-list list"> 
+                <li class="mob-menu__social-item">
+                    <a class="mob-menu__social-link  link" 
                     href="https://www.instagram.com/">Instagram</a>
                 </li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" 
+                <li class="mob-menu__social-item">
+                    <a class="mob-menu__social-link link" 
                     href="https://twitter.com/">Twitter</a>
                 </li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" 
+                <li class="mob-menu__social-item">
+                    <a class="mob-menu__social-link link" 
                     href="https://www.facebook.com/">Facebook</a>
                 </li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" 
+                <li class="mob-menu__social-item">
+                    <a class="mob-menu__social-link link" 
                     href="https://www.linkedin.com/">LinkedIn</a>
                 </li>
             </ul>
@@ -152,28 +157,40 @@
             <h2 class="works__titel">Чим ми займаємося</h2>
             <ul class="works__list list">
              <li class="works__item">
+                <picture>    
+                 <source srcset="./images/works-img-1-1x.jpg 1x,
+                 ./images/works-img-1-2x.jpg 2x"> 
                 <img class="works__img" 
-                src="./images/img1.jpg" 
-                alt="Приклад роботи" 
-                width="370" 
+                src="./images/works-img-1-1x.jpg" 
+                alt="Приклад роботи"
+                width="370"
                 height="294">
                 <p class="works__description">Десктопні додатки</p>
+                </picture>
              </li>
             <li class="works__item">
+                <picture>
+                <source srcset="./images/works-img-2-1x.jpg 1x,
+                    ./images/works-img-2-2x.jpg 2x"> 
                 <img class="works__img"
-                src="./images/img2.jpg" 
+                src="./images/works-img-2-1x.jpg" 
                 alt="Приклад роботи" 
                 width="370" 
                 height="294">
                 <p class="works__description">Мобільні додатки</p>
+                </picture>
             </li>
              <li class="works__item">
+                <picture>
+                <source srcset="./images/works-img-3-1x.jpg 1x,
+                ./images/works-img-3-2x.jpg 2x"> 
                 <img class="works__img"
-                src="./images/img3.jpg" 
+                src="./images/works-img-3-1x.jpg" 
                 alt="Приклад роботи" 
                 width="370" 
                 height="294">
                 <p class="works__description">Дизайнерські рішення</p>
+                </picture>
              </li>
             </ul>
             </div>
@@ -183,13 +200,21 @@
             <h2 class="teams__titel">Наша команда</h2>
             <ul class="workers list">
                 <li class="workers__item">
-                    <picture
-                    >
+                    <picture>
+                    <source srcset="./images/team-1-1x-desk.jpg 1x,
+                    ./images/team-1-2x-desk.jpg 2x" 
+                    media="(min-width: 1200px)" >
+
+                    <source srcset="./images/team-1-1x-tab.jpg 1x,
+                    ./images/team-1-2x-tab.jpg 2x" 
+                    media="(min-width: 768px)" >
+
+                    <source srcset="./images/team-1-1x-tel.jpg 1x,
+                    ./images/team-1-2x-tel.jpg 2x">
                     <img class="workers__photo"
-                    src="./images/team-1.jpg" 
-                    alt="team-1" 
-                    width="270" 
-                    height="260">
+                    src="./images/team-1-1x-tel.jpg" 
+                    alt="team-1">
+
                     </picture>
                     <h3 class="workers__name">Ігор Дем'яненко</h3>
                     <p class="workers__profession" lang="en">Product Designer</p>
@@ -230,12 +255,22 @@
                 </li>    
                 <li class="workers__item">
                     <picture>
-                    <img  class="workers__photo"
-                    src="./images/team-2.jpg" 
-                    alt="team-2" 
-                    width="270" 
-                    height="260">
-                    </picture>
+                        <source srcset="./images/team-2-1x-desk.jpg 1x,
+                        ./images/team-2-2x-desk.jpg 2x" 
+                        media="(min-width: 1200px)" >
+
+                        <source srcset="./images/team-2-1x-tab.jpg 1x,
+                        ./images/team-2-2x-tab.jpg 2x" 
+                        media="(min-width: 768px)" >
+
+                        <source srcset="./images/team-2-1x-tel.jpg 1x,
+                        ./images/team-2-2x-tel.jpg 2x">
+    
+                        <img class="workers__photo"
+                        src="./images/team-2-1x-tel.jpg" 
+                        alt="team-1">
+    
+                        </picture>
                     <h3 class="workers__name">Ольга Рєпіна</h3>
                     <p class="workers__profession" lang="en">Frontend Developer</p>
                     <ul class="networks-set list">
@@ -271,12 +306,22 @@
                 </li>
                 <li class="workers__item">
                     <picture>
-                    <img class="workers__photo"
-                    src="./images/team-3.jpg" 
-                    alt="team-3" 
-                    width="270" 
-                    height="260">
-                    </picture>
+                        <source srcset="./images/team-3-1x-desk.jpg 1x,
+                        ./images/team-3-2x-desk.jpg 2x" 
+                        media="(min-width: 1200px)" >
+
+                        <source srcset="./images/team-3-1x-tab.jpg 1x,
+                        ./images/team-3-2x-tab.jpg 2x" 
+                        media="(min-width: 768px)" >
+
+                        <source srcset="./images/team-3-1x-tel.jpg 1x,
+                        ./images/team-3-2x-tel.jpg 2x">
+    
+                        <img class="workers__photo"
+                        src="./images/team-3-1x-tel.jpg" 
+                        alt="team-1">
+    
+                        </picture>
                     <h3 class="workers__name">Микола Тарасов</h3>
                     <p class="workers__profession" lang="en">Marketing</p>
                     <ul class="networks-set list">
@@ -312,12 +357,22 @@
                 </li>
                 <li class="workers__item">
                     <picture>
-                    <img class="workers__photo"
-                    src="./images/team-4.jpg" 
-                    alt="team-4" 
-                    width="270" 
-                    height="260">
-                   </picture>
+                        <source srcset="./images/team-4-1x-desk.jpg 1x,
+                        ./images/team-4-2x-desk.jpg 2x" 
+                        media="(min-width: 1200px)" >
+
+                        <source srcset="./images/team-4-1x-tab.jpg 1x,
+                        ./images/team-4-2x-tab.jpg 2x" 
+                        media="(min-width: 768px)" >
+
+                        <source srcset="./images/team-4-1x-tel.jpg 1x,
+                        ./images/team-4-2x-tel.jpg 2x">
+
+                        <img class="workers__photo"
+                        src="./images/team-4-1x-tel.jpg" 
+                        alt="team-1">
+    
+                    </picture>
                     <h3 class="workers__name">Михайло Єрмаков</h3>
                     <p class="workers__profession" lang="en">UI Designer</p>
                     <ul class="networks-set list">
@@ -406,12 +461,13 @@
     </main>
     <footer class="page-footer">
 <div class="container footer-flex">
+    <div class="tab-container">
     <div class="page-footer__contacts">
-        <a class="logo page-footer__logo link" 
-        href="./index.html" 
-        lang="en">Web<span class="page-footer__logo--white">Studio</span>
-        </a>
         <address class="address">
+            <a class="logo page-footer__logo link" 
+            href="./index.html" 
+            lang="en">Web<span class="page-footer__logo--white">Studio</span>
+            </a>
             <ul class="address__list  list">
                 <li class="address__item">
                     <a class="address__map link" 
@@ -464,6 +520,7 @@
                     </a>
                 </li>
             </ul>
+        </div>
         </div>
         <div class="page-footer__form">
             <form class="footer-form">
